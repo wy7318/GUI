@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("HelloWorld", "HelloWorld"))
         self.pushButton.setText(_translate("MainWindow", "Print Message"))
 
     def printMessage(self):
