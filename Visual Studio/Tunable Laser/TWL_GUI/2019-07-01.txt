@@ -1,0 +1,1224 @@
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	195	01
+Bytes before checksum	01  35  00  c3
+Bytes after checksum	81  35  00  c3
+Response from ITLA	81  35  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	195	01
+Bytes before checksum	01  35  00  c3
+Bytes after checksum	81  35  00  c3
+Response from ITLA	90  35  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1200	01
+Bytes before checksum	01  31  04  b0
+Bytes after checksum	c1  31  04  b0
+Response from ITLA	d0  31  04  b0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	194	01
+Bytes before checksum	01  35  00  c2
+Bytes after checksum	91  35  00  c2
+Response from ITLA	91  35  00  c2
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	5000	01
+Bytes before checksum	01  36  13  88
+Bytes after checksum	61  36  13  88
+Response from ITLA	61  36  13  88
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	5000	01
+Bytes before checksum	01  36  13  88
+Bytes after checksum	61  36  13  88
+Response from ITLA	61  36  13  88
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	b0  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	5000	01
+Bytes before checksum	01  36  13  88
+Bytes after checksum	61  36  13  88
+Response from ITLA	70  36  13  88
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	191	01
+Bytes before checksum	01  35  00  bf
+Bytes after checksum	31  35  00  bf
+Response from ITLA	31  35  00  bf
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	00	01
+Bytes before checksum	01  36  00  00
+Bytes after checksum	41  36  00  00
+Response from ITLA	41  36  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	195	01
+Bytes before checksum	01  35  00  c3
+Bytes after checksum	81  35  00  c3
+Response from ITLA	81  35  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	00	01
+Bytes before checksum	01  36  00  00
+Bytes after checksum	41  36  00  00
+Response from ITLA	41  36  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1100	01
+Bytes before checksum	01  31  04  4c
+Bytes after checksum	f1  31  04  4c
+Response from ITLA	e0  31  04  4c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	195	01
+Bytes before checksum	01  35  00  c3
+Bytes after checksum	81  35  00  c3
+Response from ITLA	81  35  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1300	01
+Bytes before checksum	01  31  05  14
+Bytes after checksum	31  31  05  14
+Response from ITLA	20  31  05  14
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	48	195	01
+Bytes before checksum	01  30  00  c3
+Bytes after checksum	d1  30  00  c3
+Response from ITLA	d1  30  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	900	01
+Bytes before checksum	01  31  03  84
+Bytes after checksum	c1  31  03  84
+Response from ITLA	d0  31  03  84
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1553	01
+Bytes before checksum	01  32  06  11
+Bytes after checksum	61  32  06  11
+Response from ITLA	70  32  06  11
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	b0  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1553	01
+Bytes before checksum	01  32  06  11
+Bytes after checksum	61  32  06  11
+Response from ITLA	70  32  06  11
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	a1  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1553	01
+Bytes before checksum	01  32  06  11
+Bytes after checksum	61  32  06  11
+Response from ITLA	70  32  06  11
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	b1  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1561	01
+Bytes before checksum	01  32  06  19
+Bytes after checksum	e1  32  06  19
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1200	01
+Bytes before checksum	01  31  04  b0
+Bytes after checksum	c1  31  04  b0
+Response from ITLA	d0  31  04  b0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1561	01
+Bytes before checksum	01  32  06  19
+Bytes after checksum	e1  32  06  19
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	00  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1561	01
+Bytes before checksum	01  32  06  19
+Bytes after checksum	e1  32  06  19
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1561	01
+Bytes before checksum	01  32  06  19
+Bytes after checksum	e1  32  06  19
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	00  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1561	01
+Bytes before checksum	01  32  06  19
+Bytes after checksum	e1  32  06  19
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	191	01
+Bytes before checksum	01  35  00  bf
+Bytes after checksum	31  35  00  bf
+Response from ITLA	31  35  00  bf
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	1569	01
+Bytes before checksum	01  32  06  21
+Bytes after checksum	51  32  06  21
+Response from ITLA	40  32  06  21
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	b1  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	192	01
+Bytes before checksum	01  32  00  c0
+Bytes after checksum	c1  32  00  c0
+Response from ITLA	d0  32  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	b1  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	b1  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	b1  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	a0  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	b0  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	195	01
+Bytes before checksum	01  35  00  c3
+Bytes after checksum	81  35  00  c3
+Response from ITLA	90  35  00  c3
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	00  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	192	01
+Bytes before checksum	01  35  00  c0
+Bytes after checksum	b1  35  00  c0
+Response from ITLA	a0  35  00  c0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	53	193	01
+Bytes before checksum	01  35  00  c1
+Bytes after checksum	a1  35  00  c1
+Response from ITLA	b0  35  00  c1
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	19100	01
+Bytes before checksum	01  36  4a  9c
+Bytes after checksum	f1  36  4a  9c
+Response from ITLA	e0  36  4a  9c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	19200	01
+Bytes before checksum	01  36  4b  00
+Bytes after checksum	b1  36  4b  00
+Response from ITLA	a0  36  4b  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	20000	01
+Bytes before checksum	01  36  4e  20
+Bytes after checksum	c1  36  4e  20
+Response from ITLA	d0  36  4e  20
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	19100	01
+Bytes before checksum	01  36  4a  9c
+Bytes after checksum	f1  36  4a  9c
+Response from ITLA	e0  36  4a  9c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	19120	01
+Bytes before checksum	01  36  4a  b0
+Bytes after checksum	11  36  4a  b0
+Response from ITLA	00  36  4a  b0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	191200	01
+Bytes before checksum	01  36  ea  e0
+Bytes after checksum	e1  36  ea  e0
+Response from ITLA	f0  36  ea  e0
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1920	01
+Bytes before checksum	01  36  07  80
+Bytes after checksum	b1  36  07  80
+Response from ITLA	a0  36  07  80
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1920	01
+Bytes before checksum	01  36  07  80
+Bytes after checksum	b1  36  07  80
+Response from ITLA	a0  36  07  80
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	191500	01
+Bytes before checksum	01  36  ec  0c
+Bytes after checksum	a1  36  ec  0c
+Response from ITLA	b0  36  ec  0c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1900	01
+Bytes before checksum	01  31  07  6c
+Bytes after checksum	e1  31  07  6c
+Response from ITLA	e1  31  07  6c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1910	01
+Bytes before checksum	01  36  07  76
+Bytes after checksum	21  36  07  76
+Response from ITLA	30  36  07  76
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1930	01
+Bytes before checksum	01  36  07  8a
+Bytes after checksum	11  36  07  8a
+Response from ITLA	00  36  07  8a
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1930	01
+Bytes before checksum	01  36  07  8a
+Bytes after checksum	11  36  07  8a
+Response from ITLA	00  36  07  8a
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1940	01
+Bytes before checksum	01  36  07  94
+Bytes after checksum	e1  36  07  94
+Response from ITLA	f0  36  07  94
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1920	01
+Bytes before checksum	01  36  07  80
+Bytes after checksum	b1  36  07  80
+Response from ITLA	a0  36  07  80
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1915	01
+Bytes before checksum	01  36  07  7b
+Bytes after checksum	f1  36  07  7b
+Response from ITLA	e0  36  07  7b
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	50000	01
+Bytes before checksum	01  36  c3  50
+Bytes after checksum	e1  36  c3  50
+Response from ITLA	f0  36  c3  50
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1915	01
+Bytes before checksum	01  36  07  7b
+Bytes after checksum	f1  36  07  7b
+Response from ITLA	e0  36  07  7b
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1910	01
+Bytes before checksum	01  36  07  76
+Bytes after checksum	21  36  07  76
+Response from ITLA	30  36  07  76
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1900	01
+Bytes before checksum	01  36  07  6c
+Bytes after checksum	91  36  07  6c
+Response from ITLA	80  36  07  6c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1000	01
+Bytes before checksum	01  36  03  e8
+Bytes after checksum	11  36  03  e8
+Response from ITLA	00  36  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	20	01
+Bytes before checksum	01  36  00  14
+Bytes after checksum	11  36  00  14
+Response from ITLA	00  36  00  14
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1600	01
+Bytes before checksum	01  31  06  40
+Bytes after checksum	11  31  06  40
+Response from ITLA	00  31  06  40
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1900	01
+Bytes before checksum	01  31  07  6c
+Bytes after checksum	e1  31  07  6c
+Response from ITLA	e1  31  07  6c
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	196250	01
+Bytes before checksum	01  36  fe  9a
+Bytes after checksum	61  36  fe  9a
+Response from ITLA	70  36  fe  9a
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1962500	01
+Bytes before checksum	01  36  f2  04
+Bytes after checksum	d1  36  f2  04
+Response from ITLA	c0  36  f2  04
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	54	1962500	01
+Bytes before checksum	01  36  f2  04
+Bytes after checksum	d1  36  f2  04
+Response from ITLA	c0  36  f2  04
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	49	1000	01
+Bytes before checksum	01  31  03  e8
+Bytes after checksum	61  31  03  e8
+Response from ITLA	70  31  03  e8
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	00	01
+Bytes before checksum	01  32  00  00
+Bytes after checksum	01  32  00  00
+Response from ITLA	10  32  00  00
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	81  32  00  08
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	50	08	01
+Bytes before checksum	01  32  00  08
+Bytes after checksum	81  32  00  08
+Response from ITLA	b3  32  01  08
+

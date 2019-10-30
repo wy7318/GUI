@@ -1,0 +1,212 @@
+﻿  globalFunc.cpp
+globalFunc.cpp(51): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+  ITLA.cpp
+ITLA.cpp(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+ITLA.cpp(60): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\time.h(505): note: see declaration of 'localtime'
+ITLA.cpp(97): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\time.h(505): note: see declaration of 'localtime'
+ITLA.cpp(103): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+ITLA.cpp(159): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\time.h(505): note: see declaration of 'localtime'
+ITLA.cpp(165): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+ITLA.cpp(178): warning C4477: 'printf' : format string '%02d' requires an argument of type 'int', but variadic argument 2 has type 'double'
+ITLA.cpp(226): warning C4477: 'sprintf' : format string '%X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned char *'
+ITLA.cpp(226): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+ITLA.cpp(228): warning C4477: 'printf' : format string '%X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'System::String ^'
+ITLA.cpp(271): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+ITLA.cpp(297): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+ITLA.cpp(282): warning C4101: 'a': unreferenced local variable
+ITLA.cpp(282): warning C4101: 'l': unreferenced local variable
+ITLA.cpp(282): warning C4101: 'g': unreferenced local variable
+  MyForm.cpp
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2670): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2731): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2733): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2811): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2813): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2891): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2896): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2910): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2915): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2936): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2939): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2953): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2956): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(2859): warning C4101: 'reg': unreferenced local variable
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3062): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3121): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3160): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3161): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3162): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3173): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3174): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3200): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3204): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3210): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3214): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3228): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3087): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3090): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3095): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3098): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3132): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3135): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3139): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3146): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3149): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3525): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3634): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\time.h(505): note: see declaration of 'localtime'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3635): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3816): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3827): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3829): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3842): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(3847): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4064): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4118): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4164): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4165): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4166): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4177): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4178): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4204): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4208): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4214): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4218): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4232): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4251): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4253): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4346): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4388): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4389): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4390): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4401): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4402): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4428): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4432): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4438): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4442): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4456): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4079): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4082): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4087): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4090): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4129): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4132): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4136): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4149): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4153): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4266): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4271): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4311): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4314): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4319): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4322): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4357): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4360): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4364): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4373): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\MyForm.h(4377): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+  MyForm1.cpp
+  rs232_linux.cpp
+rs232_linux.cpp(519): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(521): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(523): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(525): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(527): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(529): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(531): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(533): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(535): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(537): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(539): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(541): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(543): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(545): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(547): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(562): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(564): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(566): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(568): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(578): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(581): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(584): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(593): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(595): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(602): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(93): note: see declaration of 'strcat'
+rs232_linux.cpp(827): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+rs232_linux.cpp(829): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(271): note: see declaration of 'strncat'
+  stdafx.cpp
+  Generating Code...
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\itla.cpp(86): warning C4172: returning address of local variable or temporary: buf
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\itla.cpp(147): warning C4172: returning address of local variable or temporary: buf
+c:\users\bruce ko\desktop\minsub lee\development\itla\software\vc workspace\twl_gui - release\twl_gui\itla.cpp(205): warning C4172: returning address of local variable or temporary: buf
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+MyForm.obj : warning LNK4258: directive '/ENTRY:mainCRTStartup' not compatible with switch '/ENTRY:Main'; ignored
+  TWL_GUI.vcxproj -> C:\Users\Bruce Ko\Desktop\Minsub Lee\Development\ITLA\Software\VC workspace\TWL_GUI - Release\Debug\TWL_GUI.exe

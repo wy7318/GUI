@@ -1,0 +1,6 @@
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	232	00	00
+Bytes before checksum	00  e8  00  00
+Bytes after checksum	60  e8  00  00
+Response from ITLA	00  e8  08  d3
+

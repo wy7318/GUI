@@ -1,0 +1,18 @@
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	87	00	00
+Bytes before checksum	00  57  00  00
+Bytes after checksum	20  57  00  00
+Response from ITLA	42  57  00  04
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	82	00	00
+Bytes before checksum	00  52  00  00
+Bytes after checksum	70  52  00  00
+Response from ITLA	30  52  00  bf
+
+ITLA Send Command:	Reg.	Data	RW
+		(Dec)	66	00	00
+Bytes before checksum	00  42  00  00
+Bytes after checksum	60  42  00  00
+Response from ITLA	e0  42  80  00
+
