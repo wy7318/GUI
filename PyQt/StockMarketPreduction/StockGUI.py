@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Bruce Ko\Desktop\Minsub Lee\Development\Git\Sups Stock\StockGUI.ui'
+# Form implementation generated from reading ui file 'C:\Users\Bruce Ko\Desktop\Minsub Lee\Development\Git\SupsStock\StockGUI.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.0
 #
@@ -52,6 +52,7 @@ class Ui_Dialog(object):
         self.verticalLayout_7 = QtWidgets.QVBoxLayout()
         self.verticalLayout_7.setObjectName("verticalLayout_7")
         self.comboBox_ticker = QtWidgets.QComboBox(self.groupBox_6)
+        self.comboBox_ticker.setEditable(True)
         self.comboBox_ticker.setObjectName("comboBox_ticker")
         self.verticalLayout_7.addWidget(self.comboBox_ticker)
         self.label_35 = QtWidgets.QLabel(self.groupBox_6)

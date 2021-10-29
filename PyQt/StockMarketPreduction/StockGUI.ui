@@ -58,7 +58,11 @@ subcontrol-position: top center;
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
-               <widget class="QComboBox" name="comboBox_ticker"/>
+               <widget class="QComboBox" name="comboBox_ticker">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
               <item>
                <widget class="QLabel" name="label_35">
