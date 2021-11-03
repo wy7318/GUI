@@ -13,6 +13,7 @@ import pandas_datareader as web
 from yahoo_fin import stock_info as si
 import numpy as np
 import pandas as pd
+from CAL import WindowCalendar
 # from sklearn.preprocessing import MinMaxScaler
 # from keras.models import Sequential
 # from keras.layers import Dense, LSTM
@@ -25,7 +26,14 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.listStock()        #Load tickers to combobox
+        # self.listStock()        #Load tickers to combobox
+
+
+        #Pushbutton Implementation
+        self.pushButton_fromCal_ss.clicked.connect(self.fromSearchStock)
+        self.pushButton_toCal_ss.clicked.connect(self.toSearchStock)
+        self.pushButton_fromCal_tc.clicked.connect(self.fromTrainingConfig)
+        self.pushButton_toCal_tc.clicked.connect(self.toTrainingConfig)
 
         ###################Stryling Graph###########################
         label_style = {'color': '#EEE', 'font-size': '10pt'}
@@ -94,6 +102,22 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         for ticker in sav_set:
             self.comboBox_ticker.addItem(str(ticker))
 
+    #From date setting for 'Search Stock'
+    def fromSearchStock(self):
+        self.calendar = WindowCalendar(self.lineEdit_from_ss)
+        self.calendar.show()
+    #To date setting for 'Search Stock'
+    def toSearchStock(self):
+        self.calendar = WindowCalendar(self.lineEdit_to_ss)
+        self.calendar.show()
+    #From date setting for 'Training Configuration'
+    def fromTrainingConfig(self):
+        self.calendar = WindowCalendar(self.lineEdit_from_tc)
+        self.calendar.show()
+    #To date setting for 'Training Configuration'
+    def toTrainingConfig(self):
+        self.calendar = WindowCalendar(self.lineEdit_toCal_tc)
+        self.calendar.show()
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
