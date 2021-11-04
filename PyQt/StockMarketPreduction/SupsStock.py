@@ -18,7 +18,9 @@ from CAL import WindowCalendar
 # from keras.models import Sequential
 # from keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
-from datetime import datetime
+import datetime
+from dateutil.relativedelta import relativedelta            #TimeDelta function
+
 
 
 
@@ -26,7 +28,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # self.listStock()        #Load tickers to combobox
+        self.listStock()        #Load tickers to combobox
 
 
         #Pushbutton Implementation
@@ -34,6 +36,11 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.pushButton_toCal_ss.clicked.connect(self.toSearchStock)
         self.pushButton_fromCal_tc.clicked.connect(self.fromTrainingConfig)
         self.pushButton_toCal_tc.clicked.connect(self.toTrainingConfig)
+        self.pushButton_search_ss.clicked.connect(self.showStock)
+        self.pushButton_10y.clicked.connect(self.tenY)
+        self.pushButton_5y.clicked.connect(self.fiveY)
+        self.pushButton_3y.clicked.connect(self.threeY)
+        self.pushButton_1y.clicked.connect(self.oneY)
 
         ###################Stryling Graph###########################
         label_style = {'color': '#EEE', 'font-size': '10pt'}
@@ -59,7 +66,6 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot1.show()
 
 
-        self.pushButton_search_ss.clicked.connect(self.showStock)
 
     # Display Stock Chart
     def showStock(self):
@@ -118,6 +124,29 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
     def toTrainingConfig(self):
         self.calendar = WindowCalendar(self.lineEdit_toCal_tc)
         self.calendar.show()
+    # To Calculate time delta
+    def yearsago(self, years, from_date=None):
+        if from_date is None:
+            from_date = datetime.now()
+        return from_date - relativedelta(years=years)
+
+    # General function for "Years" buttons
+    def YearsAuto_Gen(self, year):
+        current_time = datetime.datetime.now()
+        todayD = str(current_time.year) + "-" + str(current_time.month) + "-" + str(current_time.day)
+        self.lineEdit_to_ss.setText(todayD)
+        u = datetime.datetime.strptime(todayD,'%Y-%m-%d')
+        t = self.yearsago(year, u)
+        self.lineEdit_from_ss.setText(str(t.strftime('%Y-%m-%d')))
+
+    def tenY(self):                 # 10 Years from today
+        self.YearsAuto_Gen(10)
+    def fiveY(self):                # 5 Years from today
+        self.YearsAuto_Gen(5)
+    def threeY(self):               # 3 Years from today
+        self.YearsAuto_Gen(3)
+    def oneY(self):                 # 1 Year from today
+        self.YearsAuto_Gen(1)
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
