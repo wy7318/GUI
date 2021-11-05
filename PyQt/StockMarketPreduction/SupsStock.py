@@ -60,7 +60,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         # self.graph.setYRange(-120,10)
 
         self.gridLayout_graph.addWidget(self.graph, 0, 0)
-        self.plot1 = self.graph.plot(pen='r')
+        self.plot1 = self.graph.plot(pen='r', name='Close')
         self.plot2 = self.graph.plot(pen='b')
         self.plot3 = self.graph.plot()
         self.plot1.show()
@@ -69,7 +69,11 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
 
     # Display Stock Chart
     def showStock(self):
-        df = web.DataReader('TSLA', data_source='yahoo', start = '2020-01-01', end='2021-10-28')
+        ticker = self.comboBox_ticker.currentText()
+        startD = self.lineEdit_from_ss.text()
+        endD = self.lineEdit_to_ss.text()
+
+        df = web.DataReader(ticker, data_source='yahoo', start = startD, end=endD)
         print(df.index)
         self.plot1.setData(df['Close'])
         self.plot2.setData(df['Open'])
