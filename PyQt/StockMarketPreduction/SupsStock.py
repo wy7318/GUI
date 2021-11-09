@@ -28,7 +28,8 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.listStock()        #Load tickers to combobox
+        self.listStock_ss()        #Load tickers to combobox
+        self.listStock_tc()        #Load tickers to combobox
 
 
         #Pushbutton Implementation
@@ -50,6 +51,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.graph.getAxis('left').setLabel(**label_style)
         self.graph.getAxis('bottom').setLabel(**label_style)
         self.graph.setLabel('bottom', "Period (Year)")
+        self.graph.addLegend()      # Need this to show label of lines
 
         font=QtGui.QFont()
         font.setPixelSize(15)
@@ -60,11 +62,10 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         # self.graph.setYRange(-120,10)
 
         self.gridLayout_graph.addWidget(self.graph, 0, 0)
-        self.plot1 = self.graph.plot(pen='r', name='Close')
-        self.plot2 = self.graph.plot(pen='b')
+        self.plot1 = self.graph.plot(pen='r', name ='Close')
+        self.plot2 = self.graph.plot(pen='b', name ='Open')
         self.plot3 = self.graph.plot()
-        self.plot1.show()
-
+        # self.plot1.show()
 
 
     # Display Stock Chart
@@ -74,16 +75,14 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         endD = self.lineEdit_to_ss.text()
 
         df = web.DataReader(ticker, data_source='yahoo', start = startD, end=endD)
-        print(df.index)
+
         self.plot1.setData(df['Close'])
         self.plot2.setData(df['Open'])
         self.plot1.show()
         self.plot2.show()
-        # listdate2 = pd.date_range(start="2020-01-01",end="2021-10-25")
-        # print(listdate2)
 
     # Collecting all current list of tickers from yahoo financial
-    def listStock(self):
+    def listStock_gen(self, combobox):
         # gather stock symbols from major US exchanges
         df1 = pd.DataFrame( si.tickers_sp500() )
         df2 = pd.DataFrame( si.tickers_nasdaq() )
@@ -110,7 +109,15 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
             else:
                 sav_set.add( symbol )
         for ticker in sav_set:
-            self.comboBox_ticker.addItem(str(ticker))
+            combobox.addItem(str(ticker))
+    #Listing Stocks on "Search Stock"
+    def listStock_ss(self):
+        self.listStock_gen(self.comboBox_ticker)
+
+    #Listing Stocks on "Training Configuration"
+    def listStock_tc(self):
+        self.listStock_gen(self.comboBox_ticker_2)
+
 
     #From date setting for 'Search Stock'
     def fromSearchStock(self):
