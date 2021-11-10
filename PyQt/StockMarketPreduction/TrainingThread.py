@@ -12,7 +12,8 @@ keras = tf.keras
 class TrainingConfig(QThread):
     serialSig = pyqtSignal(str)
 
-    def __init__(self, trainingType, fromD, toD, trainingPercentage, TrainingPeriod, Epochs, parent=None):
+    def __init__(self, tickers, trainingType, fromD, toD, trainingPercentage, TrainingPeriod, Epochs, parent=None):
+        self.tickers = tickers
         self.trainingType = trainingType
         self.fromD = fromD
         self.toD = toD
@@ -26,28 +27,21 @@ class TrainingConfig(QThread):
 
     def run(self):
         #Get the stock quote
-        df = web.DataReader('TSLA', data_source='yahoo', start = '2020-01-01', end='2021-10-25')
+        df = web.DataReader(self.tickers, data_source='yahoo', start = self.fromD, end= self.toD)
         print(df)
 
         # Get the number of rows & columns in the dataset
         print(df.shape)
 
-        # Visualize the closing price history
-        plt.figure(figsize=(16,8))
-        plt.title('Close Price History')
-        plt.plot(df['Close'])
-        plt.xlabel('Date', fontsize=18)
-        plt.ylabel('Close Price USD ($)', fontsize=18)
-        plt.show()
-
         # Create a new datafram with only the close column
-        data = df.filter(['Close'])
+        data = df.filter([self.trainingType])
         print(data)
         # Convert the dataframe to a numpy array
         dataset = data.values
         # Get the number of rows to train the model on
         # Train 80% of the data.
-        training_data_len = math.ceil(len(dataset) * 0.8)       # math.ceil is to round up
+        training_data_len = math.ceil(len(dataset) * (int(self.trainingPercentage)*0.01))       # math.ceil is to round up
+                                                                                                # Training Day Percentage
         print(training_data_len)
 
         # Scale the data
@@ -64,13 +58,13 @@ class TrainingConfig(QThread):
         y_train = []        # Dependent variable
 
 
-        # Predicting with past 60 days data
-        for i in range(60, len(train_data)):
-            x_train.append(train_data[i-60:i, 0])       # x_train will contain past 60 days closing data
-            y_train.append(train_data[i, 0])            # y_train will contain the 61st day's closing data.
+        # Predicting with past x days data
+        for i in range(int(self.TrainingPeriod), len(train_data)):
+            x_train.append(train_data[i-int(self.TrainingPeriod):i, 0])       # x_train will contain past x days closing data
+            y_train.append(train_data[i, 0])            # y_train will contain the x+1 day's closing data.
 
             # Check result
-            if i<= 60:
+            if i<= int(self.TrainingPeriod):
                 print(x_train)
                 print(y_train)
                 print()
@@ -93,22 +87,22 @@ class TrainingConfig(QThread):
 
         # Compile the model
         model.compile(optimizer='adam', loss='mean_squared_error')                          # Loss function is to determine how well the model did
-        model.save("specific.h5")
+        model.save("model.h5")
 
-        newModel = tf.keras.models.load_model('specific.h5')                                #Saving Model
+        newModel = tf.keras.models.load_model('model.h5')                                #Saving Model
         # Train the model
-        newModel.fit(x_train, y_train, batch_size=1, epochs=2)
+        newModel.fit(x_train, y_train, batch_size=1, epochs=int(self.Epochs))
 
         # Create the testing data set
         # Create a new array containing scaled values
-        test_data = scaled_data[training_data_len - 60:, :]
+        test_data = scaled_data[training_data_len - int(self.TrainingPeriod):, :]
 
         # Create the data sets x_test and y_test
         x_test = []
-        y_test = dataset[training_data_len:, :]     #from non-trained data set to the end. Remaining 20%
+        y_test = dataset[training_data_len:, :]     #from non-trained data set to the end. 
 
         for i in range(60, len(test_data)):
-            x_test.append(test_data[i-60:i, 0])
+            x_test.append(test_data[i-int(self.TrainingPeriod):i, 0])
 
         # Convert the data to a numpy array
         x_test = np.array(x_test)
@@ -163,3 +157,4 @@ class TrainingConfig(QThread):
         #undo the scaling
         pred_price = scaler.inverse_transform(pred_price)
         print("Predicted price for 10/26/21 : ", pred_price)
+
