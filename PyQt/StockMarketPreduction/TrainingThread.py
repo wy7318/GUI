@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 keras = tf.keras
 
 class TrainingConfig(QThread):
-    validClosePredictSig = pyqtSignal(object, object)
+    trainValidClosePredictSig = pyqtSignal(object, object, object)
     # validPredictSig = pyqtSignal(object)
 
 
@@ -133,9 +133,9 @@ class TrainingConfig(QThread):
         # plt.plot(valid[['Close', 'Predictions']])
         # plt.legend(['Train', 'Val', 'Predictions'], loc = 'lower right')
         # plt.show()
-        
+
         # Sending curve data through pyqtSignal
-        self.validClosePredictSig.emit(valid['Close'], valid['Predictions'])
+        self.trainValidClosePredictSig.emit(train['Close'], valid['Close'], valid['Predictions'])
 
         # Show the valid and predicted prices
         print(valid)
