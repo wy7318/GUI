@@ -19,6 +19,7 @@ from CAL import WindowCalendar
 # from keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
 import datetime
+from TrainingThread import TrainingConfig
 from dateutil.relativedelta import relativedelta            #TimeDelta function
 
 
@@ -42,6 +43,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.pushButton_5y.clicked.connect(self.fiveY)
         self.pushButton_3y.clicked.connect(self.threeY)
         self.pushButton_1y.clicked.connect(self.oneY)
+        self.pushButton_train.clicked.connect(self.train)
 
         ###################Stryling Graph###########################
         label_style = {'color': '#EEE', 'font-size': '10pt'}
@@ -66,6 +68,12 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot2 = self.graph.plot(pen='b', name ='Open')
         self.plot3 = self.graph.plot()
         # self.plot1.show()
+
+
+    def train(self):
+        self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
+                                             self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
+        self.trainingThread.start()
 
 
     # Display Stock Chart
