@@ -10,7 +10,9 @@ import matplotlib.pyplot as plt
 keras = tf.keras
 
 class TrainingConfig(QThread):
-    serialSig = pyqtSignal(str)
+    validClosePredictSig = pyqtSignal(object, object)
+    # validPredictSig = pyqtSignal(object)
+
 
     def __init__(self, tickers, trainingType, fromD, toD, trainingPercentage, TrainingPeriod, Epochs, parent=None):
         self.tickers = tickers
@@ -99,7 +101,7 @@ class TrainingConfig(QThread):
 
         # Create the data sets x_test and y_test
         x_test = []
-        y_test = dataset[training_data_len:, :]     #from non-trained data set to the end. 
+        y_test = dataset[training_data_len:, :]     #from non-trained data set to the end.
 
         for i in range(60, len(test_data)):
             x_test.append(test_data[i-int(self.TrainingPeriod):i, 0])
@@ -123,14 +125,17 @@ class TrainingConfig(QThread):
         valid = data[training_data_len:]
         valid['Predictions'] = predictions
         # Visualize the data
-        plt.figure(figsize=(16, 8))
-        plt.title('Model')
-        plt.xlabel('Date', fontsize = 18)
-        plt.ylabel('Close Price USD ($)', fontsize=18)
-        plt.plot(train['Close'])
-        plt.plot(valid[['Close', 'Predictions']])
-        plt.legend(['Train', 'Val', 'Predictions'], loc = 'lower right')
-        plt.show()
+        # plt.figure(figsize=(16, 8))
+        # plt.title('Model')
+        # plt.xlabel('Date', fontsize = 18)
+        # plt.ylabel('Close Price USD ($)', fontsize=18)
+        # plt.plot(train['Close'])
+        # plt.plot(valid[['Close', 'Predictions']])
+        # plt.legend(['Train', 'Val', 'Predictions'], loc = 'lower right')
+        # plt.show()
+        
+        # Sending curve data through pyqtSignal
+        self.validClosePredictSig.emit(valid['Close'], valid['Predictions'])
 
         # Show the valid and predicted prices
         print(valid)
@@ -157,4 +162,3 @@ class TrainingConfig(QThread):
         #undo the scaling
         pred_price = scaler.inverse_transform(pred_price)
         print("Predicted price for 10/26/21 : ", pred_price)
-
