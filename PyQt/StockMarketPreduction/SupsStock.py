@@ -66,15 +66,24 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.gridLayout_graph.addWidget(self.graph, 0, 0)
         self.plot1 = self.graph.plot(pen='r', name ='Close')
         self.plot2 = self.graph.plot(pen='b', name ='Open')
-        self.plot3 = self.graph.plot()
+        self.plot3 = self.graph.plot(pen='y', name ='Prediction')
+        self.plot4 = self.graph.plot(pen='w', name ='Actual Data')
+        self.plot5 = self.graph.plot(pen='g', name ='Trained Data')
         # self.plot1.show()
 
+    def plotClosePredict(self, train, close, predict):
+        self.plot4.setData(close)
+        self.plot4.show()
+        self.plot3.setData(predict)
+        self.plot3.show()
+        self.plot5.setData(train)
+        self.plot5.show()
 
     def train(self):
         self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
                                              self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
+        self.trainingThread.trainValidClosePredictSig.connect(self.plotClosePredict)
         self.trainingThread.start()
-
 
     # Display Stock Chart
     def showStock(self):
