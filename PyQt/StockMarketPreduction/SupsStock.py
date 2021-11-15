@@ -83,7 +83,21 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
                                              self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
         self.trainingThread.trainValidClosePredictSig.connect(self.plotClosePredict)
+        self.trainingThread.countChanged.connect(self.onCountChanged_percent)
+        self.trainingThread.statusChanged.connect(self.onCountChanged_message)
+        self.trainingThread.PredictionSig.connect(self.predictionDisplay)
         self.trainingThread.start()
+
+    # ProgressBar Update
+    def onCountChanged_percent(self, percent):
+        self.progressBar_train.setValue(percent)
+    # Progress Status Wording Update
+    def onCountChanged_message(self, value):
+        self.label_sm.setText(value)
+    # Prediction Value Display
+    def predictionDisplay(self, date, value):
+        self.label_prediction.setText(date)
+        self.lineEdit_prediction.setText(value)
 
     # Display Stock Chart
     def showStock(self):

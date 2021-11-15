@@ -11,6 +11,9 @@ keras = tf.keras
 
 class TrainingConfig(QThread):
     trainValidClosePredictSig = pyqtSignal(object, object, object)
+    countChanged = pyqtSignal(int)
+    statusChanged = pyqtSignal(str)
+    PredictionSig = pyqtSignal(str, str)
     # validPredictSig = pyqtSignal(object)
 
 
@@ -28,12 +31,26 @@ class TrainingConfig(QThread):
         #self.setupUi(self)
 
     def run(self):
+
+        ############Status Check#####################################
+        count = 1                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Start Training...")
+        #############################################################
+
+
         #Get the stock quote
         df = web.DataReader(self.tickers, data_source='yahoo', start = self.fromD, end= self.toD)
         print(df)
 
         # Get the number of rows & columns in the dataset
         print(df.shape)
+
+        ############Status Check#####################################
+        count = 5                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Reshaping...")
+        #############################################################
 
         # Create a new datafram with only the close column
         data = df.filter([self.trainingType])
@@ -45,6 +62,12 @@ class TrainingConfig(QThread):
         training_data_len = math.ceil(len(dataset) * (int(self.trainingPercentage)*0.01))       # math.ceil is to round up
                                                                                                 # Training Day Percentage
         print(training_data_len)
+
+        ############Status Check#####################################
+        count = 10                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Rescaling data...")
+        #############################################################
 
         # Scale the data
         scaler = MinMaxScaler(feature_range=(0,1))
@@ -79,6 +102,13 @@ class TrainingConfig(QThread):
         x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))           # reshape number of samples, number of times, number of features
         # x_train.shape[0] = 1908, x_train_shape[1] = 60, feature is 1 because we have one output
 
+
+        ############Status Check#####################################
+        count = 15                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Building Model...")
+        #############################################################
+
         # Build the LSTM model
         model = Sequential()
         model.add(LSTM(50, return_sequences=True, input_shape=(x_train.shape[1], 1)))       # Create first 50 layers, return_sequences is 'True' since there will be another LSTM model.
@@ -92,6 +122,13 @@ class TrainingConfig(QThread):
         model.save("model.h5")
 
         newModel = tf.keras.models.load_model('model.h5')                                #Saving Model
+
+        ############Status Check#####################################
+        count = 55                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Training Model...")
+        #############################################################
+
         # Train the model
         newModel.fit(x_train, y_train, batch_size=1, epochs=int(self.Epochs))
 
@@ -111,6 +148,12 @@ class TrainingConfig(QThread):
 
         # Reshape the data
         x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+
+        ############Status Check#####################################
+        count = 70                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Un-scaling Data...")
+        #############################################################
 
         # Get the models predicted price values
         predictions = newModel.predict(x_test)
@@ -134,6 +177,12 @@ class TrainingConfig(QThread):
         # plt.legend(['Train', 'Val', 'Predictions'], loc = 'lower right')
         # plt.show()
 
+        ############Status Check#####################################
+        count = 88                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Visualizing Data...")
+        #############################################################
+
         # Sending curve data through pyqtSignal
         self.trainValidClosePredictSig.emit(train['Close'], valid['Close'], valid['Predictions'])
 
@@ -141,7 +190,7 @@ class TrainingConfig(QThread):
         print(valid)
 
         #Get the quote
-        tesla_quote = web.DataReader('TSLA', data_source='yahoo', start = '2020-01-01', end = '2021-10-25')
+        tesla_quote = web.DataReader(self.tickers, data_source='yahoo', start = self.fromD, end= self.toD)
 
         # Create a new dataframe
         new_df = tesla_quote.filter(['Close'])
@@ -162,3 +211,14 @@ class TrainingConfig(QThread):
         #undo the scaling
         pred_price = scaler.inverse_transform(pred_price)
         print("Predicted price for 10/26/21 : ", pred_price)
+
+        predictionString = self.toD
+        predictVal = str(pred_price)
+
+        self.PredictionSig.emit(predictionString, predictVal)
+
+        ############Status Check#####################################
+        count = 100                       # Start counting for progressBar
+        self.countChanged.emit(count)
+        self.statusChanged.emit("Completed!")
+        #############################################################
