@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1250</width>
-    <height>831</height>
+    <height>877</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -522,6 +522,20 @@ color : black; }
               </property>
               <property name="text">
                <string>Train</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QProgressBar" name="progressBar_train">
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_sm">
+              <property name="text">
+               <string>Status Message</string>
               </property>
              </widget>
             </item>
