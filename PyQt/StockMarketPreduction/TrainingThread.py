@@ -184,7 +184,7 @@ class TrainingConfig(QThread):
         #############################################################
 
         # Sending curve data through pyqtSignal
-        self.trainValidClosePredictSig.emit(train['Close'], valid['Close'], valid['Predictions'])
+        self.trainValidClosePredictSig.emit(train[self.trainingType], valid[self.trainingType], valid['Predictions'])
 
         # Show the valid and predicted prices
         print(valid)
@@ -193,7 +193,7 @@ class TrainingConfig(QThread):
         tesla_quote = web.DataReader(self.tickers, data_source='yahoo', start = self.fromD, end= self.toD)
 
         # Create a new dataframe
-        new_df = tesla_quote.filter(['Close'])
+        new_df = tesla_quote.filter([self.trainingType])
         # Get the last 60 days closing price values and convert the dataframe to array
         last_60_days = new_df[-60:].values
         #Scale the data to be values between 0 and 1
