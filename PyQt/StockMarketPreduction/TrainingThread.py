@@ -8,6 +8,7 @@ from keras.models import Sequential
 from keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
 keras = tf.keras
+import datetime
 
 class TrainingConfig(QThread):
     trainValidClosePredictSig = pyqtSignal(object, object, object)
@@ -212,7 +213,13 @@ class TrainingConfig(QThread):
         pred_price = scaler.inverse_transform(pred_price)
         print("Predicted price for 10/26/21 : ", pred_price)
 
-        predictionString = self.toD
+
+        # Strip date and calculate next date
+        lastDate = datetime.datetime.strptime(self.toD, '%Y-%m-%d')
+        addDate = datetime.timedelta(days=1)
+        predictDate = lastDate + addDate
+
+        predictionString = str(predictDate.strftime('%Y-%m-%d'))
         predictVal = str(pred_price)
 
         self.PredictionSig.emit(predictionString, predictVal)
