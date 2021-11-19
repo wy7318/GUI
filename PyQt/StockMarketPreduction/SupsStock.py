@@ -19,7 +19,7 @@ from CAL import WindowCalendar
 # from keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
 import datetime
-from TrainingThread import TrainingConfig
+from TrainingThread import TrainingConfig, TrainingConfig_Period
 from dateutil.relativedelta import relativedelta            #TimeDelta function
 
 
@@ -43,6 +43,11 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.pushButton_5y.clicked.connect(self.fiveY)
         self.pushButton_3y.clicked.connect(self.threeY)
         self.pushButton_1y.clicked.connect(self.oneY)
+        self.pushButton_10y_2.clicked.connect(self.tenY_tc)
+        self.pushButton_5y_2.clicked.connect(self.fiveY_tc)
+        self.pushButton_3y_2.clicked.connect(self.threeY_tc)
+        self.pushButton_1y_2.clicked.connect(self.oneY_tc)
+
         self.pushButton_train.clicked.connect(self.train)
 
         ###################Stryling Graph###########################
@@ -80,13 +85,21 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot5.show()
 
     def train(self):
-        self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
-                                             self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
-        self.trainingThread.trainValidClosePredictSig.connect(self.plotClosePredict)
-        self.trainingThread.countChanged.connect(self.onCountChanged_percent)
-        self.trainingThread.statusChanged.connect(self.onCountChanged_message)
-        self.trainingThread.PredictionSig.connect(self.predictionDisplay)
-        self.trainingThread.start()
+        if self.checkBox_next.isChecked():      # Next Day Prediction is selected
+            print("next")
+            self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
+                                                 self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
+            self.trainingThread.trainValidClosePredictSig.connect(self.plotClosePredict)
+            self.trainingThread.countChanged.connect(self.onCountChanged_percent)
+            self.trainingThread.statusChanged.connect(self.onCountChanged_message)
+            self.trainingThread.PredictionSig.connect(self.predictionDisplay)
+            self.trainingThread.start()
+        elif self.checkBox_period.isChecked():  # Period Prediction is selected
+            print("period")
+        else:                                   # None Selected
+            QMessageBox.about(self, "Warning", "Please select your prediction type!")
+
+
 
     # ProgressBar Update
     def onCountChanged_percent(self, percent):
@@ -173,22 +186,31 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         return from_date - relativedelta(years=years)
 
     # General function for "Years" buttons
-    def YearsAuto_Gen(self, year):
+    def YearsAuto_Gen(self, year, fromField, toField):
         current_time = datetime.datetime.now()
         todayD = str(current_time.year) + "-" + str(current_time.month) + "-" + str(current_time.day)
-        self.lineEdit_to_ss.setText(todayD)
+        toField.setText(todayD)
         u = datetime.datetime.strptime(todayD,'%Y-%m-%d')
         t = self.yearsago(year, u)
-        self.lineEdit_from_ss.setText(str(t.strftime('%Y-%m-%d')))
-
+        fromField.setText(str(t.strftime('%Y-%m-%d')))
+    # Searching Stock Section
     def tenY(self):                 # 10 Years from today
-        self.YearsAuto_Gen(10)
+        self.YearsAuto_Gen(10, self.lineEdit_from_ss, self.lineEdit_to_ss)
     def fiveY(self):                # 5 Years from today
-        self.YearsAuto_Gen(5)
+        self.YearsAuto_Gen(5, self.lineEdit_from_ss, self.lineEdit_to_ss)
     def threeY(self):               # 3 Years from today
-        self.YearsAuto_Gen(3)
+        self.YearsAuto_Gen(3, self.lineEdit_from_ss, self.lineEdit_to_ss)
     def oneY(self):                 # 1 Year from today
-        self.YearsAuto_Gen(1)
+        self.YearsAuto_Gen(1, self.lineEdit_from_ss, self.lineEdit_to_ss)
+    # Training Configuration Section
+    def tenY_tc(self):                 # 10 Years from today
+        self.YearsAuto_Gen(10, self.lineEdit_from_tc, self.lineEdit_toCal_tc)
+    def fiveY_tc(self):                # 5 Years from today
+        self.YearsAuto_Gen(5, self.lineEdit_from_tc, self.lineEdit_toCal_tc)
+    def threeY_tc(self):               # 3 Years from today
+        self.YearsAuto_Gen(3, self.lineEdit_from_tc, self.lineEdit_toCal_tc)
+    def oneY_tc(self):                 # 1 Year from today
+        self.YearsAuto_Gen(1, self.lineEdit_from_tc, self.lineEdit_toCal_tc)
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
