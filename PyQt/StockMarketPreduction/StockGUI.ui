@@ -261,21 +261,6 @@ subcontrol-position: top center;
              <string/>
             </property>
             <layout class="QGridLayout" name="gridLayout_2">
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_32">
-               <property name="font">
-                <font>
-                 <family>MS Sans Serif</family>
-                 <pointsize>12</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="text">
-                <string>Prediction (Next Day)</string>
-               </property>
-              </widget>
-             </item>
              <item row="4" column="0">
               <layout class="QVBoxLayout" name="verticalLayout_4">
                <item>
@@ -381,6 +366,34 @@ QLineEdit:focus { background-color:rgb(255, 255, 255);}</string>
                </item>
               </layout>
              </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_next">
+               <property name="font">
+                <font>
+                 <family>MS Sans Serif</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Prediction (Next Day)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="font">
+                <font>
+                 <family>MS Reference Sans Serif</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Training Period (Last XX days)</string>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="0">
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
@@ -415,19 +428,6 @@ QLineEdit:focus { background-color:rgb(255, 255, 255);}</string>
                 </widget>
                </item>
               </layout>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="label_22">
-               <property name="font">
-                <font>
-                 <family>MS Reference Sans Serif</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Training Period (Last XX days)</string>
-               </property>
-              </widget>
              </item>
             </layout>
            </widget>
@@ -471,7 +471,7 @@ subcontrol-position: top center;
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="0" column="0">
-              <widget class="QLabel" name="label_38">
+              <widget class="QCheckBox" name="checkBox_period">
                <property name="font">
                 <font>
                  <family>MS Sans Serif</family>
