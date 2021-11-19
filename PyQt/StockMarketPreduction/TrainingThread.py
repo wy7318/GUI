@@ -144,7 +144,7 @@ class TrainingConfig(QThread):
         x_test = []
         y_test = dataset[training_data_len:, :]     #from non-trained data set to the end.
 
-        for i in range(60, len(test_data)):
+        for i in range(int(self.TrainingPeriod), len(test_data)):
             x_test.append(test_data[i-int(self.TrainingPeriod):i, 0])
 
         # Convert the data to a numpy array
@@ -199,7 +199,7 @@ class TrainingConfig(QThread):
         # Create a new dataframe
         new_df = tesla_quote.filter([self.trainingType])
         # Get the last 60 days closing price values and convert the dataframe to array
-        last_60_days = new_df[-60:].values
+        last_60_days = new_df[-int(self.TrainingPeriod):].values
         #Scale the data to be values between 0 and 1
         last_60_days_scaled = scaler.transform(last_60_days)
         # Create an empty list
@@ -368,7 +368,7 @@ class TrainingConfig_Period(QThread):
         x_test = []
         y_test = dataset[training_data_len:, :]     #from non-trained data set to the end.
 
-        for i in range(60, len(test_data)):
+        for i in range(int(self.TrainingPeriod), len(test_data)):
             x_test.append(test_data[i-int(self.TrainingPeriod):i, 0])
 
         # Convert the data to a numpy array
@@ -423,7 +423,7 @@ class TrainingConfig_Period(QThread):
         # Create a new dataframe
         new_df = tesla_quote.filter([self.trainingType])
         # Get the last 60 days closing price values and convert the dataframe to array
-        last_60_days = new_df[-60:].values
+        last_60_days = new_df[-int(self.TrainingPeriod):].values
         #Scale the data to be values between 0 and 1
         last_60_days_scaled = scaler.transform(last_60_days)
         # Create an empty list
