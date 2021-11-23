@@ -83,11 +83,13 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot3.show()
         self.plot5.setData(train)
         self.plot5.show()
+        self.plot1.clear()
+        self.plot2.clear()
 
     def train(self):
         if self.checkBox_next.isChecked():      # Next Day Prediction is selected
             print("next")
-            self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_to_ss.text(),
+            self.trainingThread = TrainingConfig(self.comboBox_ticker_2.currentText(), self.comboBox_trainingType.currentText(), self.lineEdit_from_tc.text(), self.lineEdit_toCal_tc.text(),
                                                  self.lineEdit_trainingPercentage.text(), self.lineEdit_trainingPeriod.text(), self.lineEdit_epochs.text())
             self.trainingThread.trainValidClosePredictSig.connect(self.plotClosePredict)
             self.trainingThread.countChanged.connect(self.onCountChanged_percent)
@@ -124,6 +126,9 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot2.setData(df['Open'])
         self.plot1.show()
         self.plot2.show()
+        self.plot3.clear()
+        self.plot4.clear()
+        self.plot5.clear()
 
     # Collecting all current list of tickers from yahoo financial
     def listStock_gen(self, combobox):
