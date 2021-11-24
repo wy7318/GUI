@@ -81,8 +81,8 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot4.show()
         self.plot3.setData(predict)
         self.plot3.show()
-        self.plot5.setData(train)
-        self.plot5.show()
+        # self.plot5.setData(train)
+        # self.plot5.show()
         self.plot1.clear()
         self.plot2.clear()
 

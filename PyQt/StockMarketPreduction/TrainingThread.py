@@ -46,6 +46,8 @@ class TrainingConfig(QThread):
         #Get the stock quote
         df = web.DataReader(self.tickers, data_source='yahoo', start = self.fromD, end= self.toD)
         print(df)
+        modified = df.reset_index()
+        print(modified['Date'])
 
         # Get the number of rows & columns in the dataset
         print(df.shape)
@@ -65,7 +67,7 @@ class TrainingConfig(QThread):
         # Train 80% of the data.
         training_data_len = math.ceil(len(dataset) * (int(self.trainingPercentage)*0.01))       # math.ceil is to round up
                                                                                                 # Training Day Percentage
-        print(training_data_len)
+        print("training_data_len : ", training_data_len)
 
         ############Status Check#####################################
         count = 10                       # Start counting for progressBar
@@ -81,7 +83,7 @@ class TrainingConfig(QThread):
         # Create the training dataset
         # Create the scaled training dataset
         train_data = scaled_data[0:training_data_len, :]        # Get from index 0 to the training len
-        print(train_data)
+        print("train_data : ", train_data)
         # Split the data into x_train and y_train datasets
         x_train = []        # Independent variable
         y_train = []        # Dependent variable
@@ -143,10 +145,10 @@ class TrainingConfig(QThread):
         # Create the data sets x_test and y_test
         x_test = []
         y_test = dataset[training_data_len:, :]     #from non-trained data set to the end.
-
+        print("y_test : ", y_test)
         for i in range(int(self.TrainingPeriod), len(test_data)):
             x_test.append(test_data[i-int(self.TrainingPeriod):i, 0])
-
+        print("x_test : ", x_test)
         # Convert the data to a numpy array
         x_test = np.array(x_test)
 
@@ -190,6 +192,8 @@ class TrainingConfig(QThread):
         # Sending curve data through pyqtSignal
         self.trainValidClosePredictSig.emit(train[self.trainingType], valid[self.trainingType], valid['Predictions'])
 
+        print("prediction Valid : ", valid['Predictions'])
+
         # Show the valid and predicted prices
         print(valid)
 
@@ -200,12 +204,14 @@ class TrainingConfig(QThread):
         new_df = tesla_quote.filter([self.trainingType])
         # Get the last 60 days closing price values and convert the dataframe to array
         last_60_days = new_df[-int(self.TrainingPeriod):].values
+        print("last_60_days", last_60_days)
         #Scale the data to be values between 0 and 1
         last_60_days_scaled = scaler.transform(last_60_days)
         # Create an empty list
         X_text = []
         # Append the past 60 days
         X_text.append(last_60_days_scaled)
+        print("X-test ", X_text)
         # Convert the X_test data set to a numpy array
         X_text = np.array(X_text)
         # Reshape the data
@@ -223,7 +229,7 @@ class TrainingConfig(QThread):
         predictDate = lastDate + addDate
 
         predictionString = str(predictDate.strftime('%Y-%m-%d'))
-        predictVal = str(pred_price)
+        predictVal = str(pred_price)[2:-2]                          # Strip prediction value, only to display number
 
         self.PredictionSig.emit(predictionString, predictVal)
 
@@ -246,12 +252,13 @@ class TrainingConfig_Period(QThread):
     # validPredictSig = pyqtSignal(object)
 
 
-    def __init__(self, tickers, trainingType, fromD, toD, TrainingPeriod, Epochs, parent=None):
+    def __init__(self, tickers, trainingType, fromD, toD, TrainingPeriod, PredictionPeriod, Epochs, parent=None):
         self.tickers = tickers
         self.trainingType = trainingType
         self.fromD = fromD
         self.toD = toD
         self.TrainingPeriod = TrainingPeriod
+        self.PredictionPeriod = PredictionPeriod
         self.Epochs = Epochs
 
 
