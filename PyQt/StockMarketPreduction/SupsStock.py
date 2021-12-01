@@ -80,11 +80,13 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot4.setData(close)
         self.plot4.show()
         self.plot3.setData(predict)
+        print(predict)
         self.plot3.show()
         # self.plot5.setData(train)
         # self.plot5.show()
         self.plot1.clear()
         self.plot2.clear()
+
 
     def train(self):
         if self.checkBox_next.isChecked():      # Next Day Prediction is selected
@@ -129,6 +131,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot3.clear()
         self.plot4.clear()
         self.plot5.clear()
+        self.graph.autoRange()
 
     # Collecting all current list of tickers from yahoo financial
     def listStock_gen(self, combobox):
