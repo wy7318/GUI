@@ -13,9 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_5">
+  <layout class="QGridLayout" name="gridLayout_6">
    <item row="0" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,10">
+    <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="1,3">
      <item>
       <widget class="QGroupBox" name="groupBox_4">
        <property name="styleSheet">
@@ -640,7 +640,7 @@ color : black; }
       </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,13">
+      <layout class="QVBoxLayout" name="verticalLayout_9" stretch="1,10">
        <item>
         <widget class="QGroupBox" name="groupBox_6">
          <property name="styleSheet">
@@ -660,28 +660,28 @@ subcontrol-position: top center;
          <property name="title">
           <string/>
          </property>
-         <layout class="QGridLayout" name="gridLayout">
+         <layout class="QGridLayout" name="gridLayout_5">
           <item row="0" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_9">
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
             <item>
-             <widget class="QLabel" name="label_33">
-              <property name="font">
-               <font>
-                <family>MS Sans Serif</family>
-                <pointsize>12</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Search Stock</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="2,8,1">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
-               <layout class="QVBoxLayout" name="verticalLayout_7">
+               <layout class="QHBoxLayout" name="horizontalLayout_21">
+                <item>
+                 <widget class="QLabel" name="label_33">
+                  <property name="font">
+                   <font>
+                    <family>MS Sans Serif</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Search Stock</string>
+                  </property>
+                 </widget>
+                </item>
                 <item>
                  <widget class="QComboBox" name="comboBox_ticker">
                   <property name="editable">
@@ -714,76 +714,120 @@ subcontrol-position: top center;
                </layout>
               </item>
               <item>
-               <layout class="QVBoxLayout" name="verticalLayout_8">
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
                 <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
                   <item>
-                   <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
                     <item>
-                     <widget class="QLabel" name="label_37">
-                      <property name="font">
-                       <font>
-                        <family>MS Reference Sans Serif</family>
-                        <pointsize>10</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>From (YYYY-MM-DD)</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <layout class="QVBoxLayout" name="verticalLayout_2">
                       <item>
-                       <widget class="QLineEdit" name="lineEdit_from_ss">
+                       <widget class="QLabel" name="label_37">
+                        <property name="font">
+                         <font>
+                          <family>MS Reference Sans Serif</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
                         <property name="text">
-                         <string/>
+                         <string>From (YYYY-MM-DD)</string>
                         </property>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QPushButton" name="pushButton_fromCal_ss">
+                       <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_from_ss">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_fromCal_ss">
+                          <property name="text">
+                           <string>Calendar</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_3">
+                      <item>
+                       <widget class="QLabel" name="label_40">
+                        <property name="font">
+                         <font>
+                          <family>MS Reference Sans Serif</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
                         <property name="text">
-                         <string>Calendar</string>
+                         <string>To  (YYYY-MM-DD)</string>
                         </property>
                        </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_5">
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_to_ss">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_toCal_ss">
+                          <property name="text">
+                           <string>Calendar</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
                       </item>
                      </layout>
                     </item>
                    </layout>
                   </item>
                   <item>
-                   <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
                     <item>
-                     <widget class="QLabel" name="label_40">
-                      <property name="font">
-                       <font>
-                        <family>MS Reference Sans Serif</family>
-                        <pointsize>10</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>To  (YYYY-MM-DD)</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
                       <item>
-                       <widget class="QLineEdit" name="lineEdit_to_ss">
+                       <widget class="QPushButton" name="pushButton_10y">
                         <property name="text">
-                         <string/>
+                         <string>10 Years</string>
                         </property>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QPushButton" name="pushButton_toCal_ss">
+                       <widget class="QPushButton" name="pushButton_5y">
                         <property name="text">
-                         <string>Calendar</string>
+                         <string>5 Years</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_6">
+                      <item>
+                       <widget class="QPushButton" name="pushButton_3y">
+                        <property name="text">
+                         <string>3 Years</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pushButton_1y">
+                        <property name="text">
+                         <string>1 Years</string>
                         </property>
                        </widget>
                       </item>
@@ -794,55 +838,81 @@ subcontrol-position: top center;
                  </layout>
                 </item>
                 <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_8">
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_7">
-                    <item>
-                     <widget class="QPushButton" name="pushButton_10y">
-                      <property name="text">
-                       <string>10 Years</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QPushButton" name="pushButton_5y">
-                      <property name="text">
-                       <string>5 Years</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_6">
-                    <item>
-                     <widget class="QPushButton" name="pushButton_3y">
-                      <property name="text">
-                       <string>3 Years</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QPushButton" name="pushButton_1y">
-                      <property name="text">
-                       <string>1 Years</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
+                 <widget class="QPushButton" name="pushButton_search_ss">
+                  <property name="text">
+                   <string>Search</string>
+                  </property>
+                 </widget>
                 </item>
                </layout>
               </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_search_ss">
-                <property name="text">
-                 <string>Search</string>
-                </property>
-               </widget>
-              </item>
              </layout>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="text">
+                    <string>Price : </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15">
+                   <item>
+                    <widget class="QLabel" name="label_price">
+                     <property name="text">
+                      <string>$</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_price">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+background-color : rgb(220, 220, 220);
+}</string>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Date : </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_date">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+background-color : rgb(220, 220, 220);
+}</string>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
             </item>
            </layout>
           </item>
