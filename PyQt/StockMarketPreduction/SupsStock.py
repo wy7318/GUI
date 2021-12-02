@@ -68,6 +68,7 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         # self.graph.getAxis("left").setStyle(tickTextOffset=20)
         # self.graph.setYRange(-120,10)
 
+
         self.gridLayout_graph.addWidget(self.graph, 0, 0)
         self.plot1 = self.graph.plot(pen='r', name ='Close')
         self.plot2 = self.graph.plot(pen='b', name ='Open')
@@ -75,6 +76,15 @@ class MainClass(QDialog,StockGUI.Ui_Dialog):
         self.plot4 = self.graph.plot(pen='w', name ='Actual Data')
         self.plot5 = self.graph.plot(pen='g', name ='Trained Data')
         # self.plot1.show()
+
+        # Connect mouse cursor return function
+        self.plot1.scene().sigMouseMoved.connect(self.onMouseMoved)
+
+    # Mouse Cursor Coordinate return
+    def onMouseMoved(self, point):
+        p = self.graph.plotItem.vb.mapSceneToView(point)
+        self.lineEdit_price.setText("{:.2f}".format(p.y()))
+        self.lineEdit_date.setText("{:.0f}".format(p.x()))
 
     def plotClosePredict(self, train, close, predict):
         self.plot4.setData(close)
