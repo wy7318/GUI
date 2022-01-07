@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,10">
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+background-color: white;
+border: 2px solid gray;
+ border-radius: 5px;
+
+ }
+
+QGroupBox::title {
+subcontrol-origin: margin;
+subcontrol-position: top center;
+ color: black;
+}</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="font">
+               <font>
+                <family>MS Sans Serif</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Import Data</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <item>
+               <widget class="QLabel" name="label_37">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>File Location</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_loc">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{
+background-color : rgb(220, 220, 220);
+}</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_import">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Reference Sans Serif</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{     background:rgb(230, 230, 230);
+
+border-style: outset;
+border-width: 1px;
+border-color: rgb(43, 43, 43);
+
+
+}
+QPushButton:disabled{background-color :rgb(206, 207, 216);}
+
+QPushButton:focus:pressed{ background-color: black; }
+
+QPushButton:hover{    background:rgb(221, 237, 255);
+color : black; }
+</string>
+            </property>
+            <property name="text">
+             <string>Import Data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+background-color: white;
+border: 2px solid gray;
+ border-radius: 5px;
+
+ }
+
+QGroupBox::title {
+subcontrol-origin: margin;
+subcontrol-position: top center;
+ color: black;
+}</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QLabel" name="label_36">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Columns</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_columns">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_refresh">
+                <property name="text">
+                 <string>Refresh</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="label_30">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Activation Type</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_actType">
+                <item>
+                 <property name="text">
+                  <string>relu</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>sigmoid</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>softmax</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>selu</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="label_29">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Epochs</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_epochs">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{ background-color: rgb(255, 255, 255);
+}
+QLineEdit:focus { background-color:rgb(255, 255, 255);}</string>
+                </property>
+                <property name="text">
+                 <string>30</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QLabel" name="label_28">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Training Percentage</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_trainingPercentage">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit{ background-color: rgb(255, 255, 255);
+}
+QLineEdit:focus { background-color:rgb(255, 255, 255);}</string>
+                </property>
+                <property name="text">
+                 <string>80</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_freqS_sg_1">
+                <property name="text">
+                 <string>%</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+background-color: white;
+border: 2px solid gray;
+ border-radius: 5px;
+
+ }
+
+QGroupBox::title {
+subcontrol-origin: margin;
+subcontrol-position: top center;
+ color: black;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="1" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_34">
+                     <property name="font">
+                      <font>
+                       <family>MS Reference Sans Serif</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Predicted Value for </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_prediction">
+                     <property name="font">
+                      <font>
+                       <family>MS Reference Sans Serif</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>XXXXX</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_span_4">
+                     <property name="text">
+                      <string>$</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_prediction">
+                     <property name="font">
+                      <font>
+                       <family>MS Reference Sans Serif</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{ background-color: rgb(255, 255, 255);
+}
+QLineEdit:focus { background-color:rgb(255, 255, 255);}</string>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_39">
+              <property name="font">
+               <font>
+                <family>MS Sans Serif</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>OR</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_train">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>27</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Reference Sans Serif</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{     background:rgb(230, 230, 230);
+
+border-style: outset;
+border-width: 1px;
+border-color: rgb(43, 43, 43);
+
+
+}
+QPushButton:disabled{background-color :rgb(206, 207, 216);}
+
+QPushButton:focus:pressed{ background-color: black; }
+
+QPushButton:hover{    background:rgb(221, 237, 255);
+color : black; }
+</string>
+              </property>
+              <property name="text">
+               <string>Train</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QProgressBar" name="progressBar_train">
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_sm">
+              <property name="text">
+               <string>Status Message</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_9" stretch="10">
+       <item>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+background-color: white;
+border: 2px solid gray;
+ border-radius: 5px;
+
+ }
+
+QGroupBox::title {
+subcontrol-origin: margin;
+subcontrol-position: top center;
+ color: black;
+}</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_graph"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
